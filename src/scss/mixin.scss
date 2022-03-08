@@ -1,0 +1,73 @@
+@function rem($px) {
+	$result: calc($px/ 16) + rem;
+	@return $result;
+}
+
+@function em($px, $current: 16) {
+	$result: calc($px / $current) + em;
+	@return $result;
+}
+
+@function percent($px, $from) {
+	$result: calc(($px/$from) * 100%);
+	@return $result;
+}
+
+$maxWidthConteiner:1302;
+$maxWidth:1920;
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type:1) {
+	$addSize: $startSize - $minSize;
+
+	@if $type==1 {
+
+		@media (max-width: #{$maxWidthConteiner +px}) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px)/ #{$maxWidthConteiner - 320}));
+
+		}
+	}
+
+	@else if $type==2 {
+		#{$property}: $startSize + px;
+
+		@media(min-width: calc(#{$maxWidthConteiner + px})) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{maxWidth - 320}));
+		}
+	}
+
+	@else {
+		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px)/ #{maxWidth - 320}))
+	}
+}
+
+// @mixin adaptiv2($property,$startSize,$minSize,$startSize2,$minSize2,$startSize3,$minSize3,$startSize4,$minSize4) {
+// 	$addSize: $startSize - $minSize;
+// 	$addSize2: $startSize2 - $minSize2;
+// 	$addSize3: $startSize4 - $minSize3;
+// 	$addSize4: $startSize3 - $minSize4;
+
+
+// 		@media (max-width: #{$maxWidthConteiner +px}){
+// 			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px)/ #{$maxWidthConteiner - 320})),calc(#{$minSize2 + px} + #{$addSize2} * ((100vw - 320px)/ #{$maxWidthConteiner - 320})),calc(#{$minSize3 + px} + #{$addSize3} * ((100vw - 320px)/ #{$maxWidthConteiner - 320})),calc(#{$minSize4 + px} + #{$addSize4} * ((100vw - 320px)/ #{$maxWidthConteiner - 320}));
+
+
+
+
+// }
+// }
+// @mixin adaptiv3($property,$startSize,$minSize,$startSize2,$minSize2) {
+// 	$addSize: $startSize - $minSize;
+// 	$addSize2: $startSize2 - $minSize2;
+
+// 	$el1: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px)/ #{$maxWidthConteiner - 320}));
+
+// 	$el2: calc(#{$minSize2 + px} + #{$addSize2} * ((100vw - 320px)/ #{$maxWidthConteiner - 320}));
+
+// 		@media (max-width: #{$maxWidthConteiner +px}){
+// 			#{$property}:($el1); 
+
+
+
+
+// }
+// }
