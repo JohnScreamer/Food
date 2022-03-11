@@ -1,13 +1,17 @@
-import {Headerinput} from "./header-input.js"
+import {
+   Headerinput
+} from "./header-input.js"
 
-class EventLoad{
-   
-   events(){
-      console.log(12345);
+class EventLoad {
+
+   events() {
+
       Headerinput.render()
-    
-      
+
+
    }
 }
-let event= new EventLoad()
-export {event}
+let event = new EventLoad()
+export {
+   event
+}

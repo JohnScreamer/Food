@@ -5,15 +5,14 @@
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
-    "dev":"gulp",
-    "build":"gulp build --build",
-
-
+    "dev": "gulp",
+    "build": "gulp build --build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "john",
   "license": "ISC",
   "dependencies": {
+    "4": "^0.0.0",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "fs": "^0.0.1-security",
@@ -37,8 +36,10 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-html-nosvg": "^1.0.5",
     "gulp-webpcss": "^1.1.1",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
     "sass": "^1.49.9",
-    "swiper": "^8.0.6",
+    "swiper": "^8.0.7",
     "webp-converter": "2.2.3",
     "webpack": "5.69.1",
     "webpack-stream": "^7.0.0"
