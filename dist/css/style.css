@@ -287,6 +287,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-right: 0.625rem;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
 }
 
 .header-menu__basket {
@@ -369,6 +373,10 @@ a {
 .conteiner {
   max-width: 81.375rem;
   margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .telefon-info__icon {
@@ -617,6 +625,10 @@ a {
 .food-categories {
   background-color: #3D3A39;
   overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .food {

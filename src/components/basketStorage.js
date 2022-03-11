@@ -6,6 +6,10 @@ import {
 class BasketStorage {
 
 
+
+
+
+
    async valid() {
       let basket = await localStorage.key('basket')
       if (!basket) {
@@ -57,11 +61,18 @@ class BasketStorage {
    async decrement(id) {
       let basket = await this.valid()
       basket = basket.filter(item => {
-         if (item.id != id) {
+         if (item.id == id) {
+            if (item.amount > 1) {
+               item.amount = +item.amount - 1;
+               return item;
+            } else {
+               return;
+            }
 
-            return item;
+
+
          }
-
+         return item;
       })
 
       localStorage.setItem('basket', JSON.stringify(basket));

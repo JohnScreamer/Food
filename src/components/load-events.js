@@ -1,17 +1,18 @@
 import {
-   Headerinput
-} from "./header-input.js"
+   sliderHeader
+} from '../components/Header-slider.js'
+
 
 class EventLoad {
 
    events() {
 
-      Headerinput.render()
 
+      sliderHeader.addDefaultSliderSetting()
 
    }
 }
-let event = new EventLoad()
+let eventLoad = new EventLoad()
 export {
-   event
+   eventLoad
 }
