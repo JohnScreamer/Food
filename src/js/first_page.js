@@ -1,8 +1,7 @@
+console.log('pruvit');
 import {
-   cardRender
-} from '../modules/first_page/food-card-Render.js'
-
-
+   basketdRender
+} from "../modules/basket/basket_page.js"
 import {
    burger
 } from '../components/header-burger.js'
@@ -18,8 +17,6 @@ import {
 import {
    addEvents
 } from '../components/btn-card-events.js'
-
-
 import {
    eventLoad
 } from '../components/load-events.js'
@@ -30,11 +27,14 @@ import {
 
 
 (async function () {
+   try {
+      basketdRender.render()
+   } catch (error) {
+      console.log(error);
 
+   }
 
-   await cardRender.render()
    sliderHeader.addSliderEvent()
-
    burger.render()
    mainSlider.sliderMain()
    addEvents.add()
@@ -47,7 +47,7 @@ import {
 
    window.addEventListener('storage', eventstorage)
    async function eventstorage() {
-      await cardRender.render()
+      basketdRender.render()
       burger.render()
       mainSlider.sliderMain()
       countBasket.render()

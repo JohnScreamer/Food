@@ -1,6 +1,9 @@
 import {
    basketStorage
 } from '../components/basketStorage.js'
+import {
+   countBasket
+} from '../components/basket-counter.js'
 
 class AddEvents {
    add() {
@@ -10,6 +13,7 @@ class AddEvents {
          let btnPlus = e.target.closest('.card__btn-plus');
 
          if (btnBasket) {
+
             btnBasket.style.display = 'none';
             let card = btnBasket.closest('.card');
             card.querySelector('.card__btn-minus').style.display = 'block';
@@ -17,6 +21,12 @@ class AddEvents {
             card.querySelector('.card__counter').style.display = 'flex';
             card.querySelector('.card__counter').textContent = 1;
             basketStorage.addItem(card.getAttribute('data-id'));
+
+            setTimeout(() => {
+               countBasket.render()
+            }, 555);
+
+
 
 
 
@@ -30,15 +40,25 @@ class AddEvents {
             if (+card.querySelector('.card__counter').textContent > 1) {
 
                card.querySelector('.card__counter').textContent = +card.querySelector('.card__counter').textContent - 1;
+               setTimeout(() => {
+                  countBasket.render()
+               }, 555);
+
+
             } else {
 
                card.querySelector('.card__counter').style.display = 'none';
                card.querySelector('.card__btn-basket').style.display = 'flex';
                card.querySelector('.card__btn-plus').style.display = 'none';
                card.querySelector('.card__btn-minus').style.display = 'none';
+               setTimeout(() => {
+                  countBasket.render()
+               }, 555);
+
 
 
             }
+
 
 
          }
@@ -47,6 +67,11 @@ class AddEvents {
             let card = btnPlus.closest('.card');
             card.querySelector('.card__counter').textContent = +card.querySelector('.card__counter').textContent + 1;
             basketStorage.increment(card.getAttribute('data-id'))
+            setTimeout(() => {
+               countBasket.render()
+            }, 555);
+
+
          }
 
 

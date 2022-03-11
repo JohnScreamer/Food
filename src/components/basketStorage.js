@@ -79,6 +79,28 @@ class BasketStorage {
 
 
    }
+   async getInfo() {
+      let data = await this.valid();
+      let totalPrice = 0;
+      let totalAmout = 0
+
+      data.forEach(({
+         price,
+         amount
+      }) => {
+         totalAmout += amount;
+         totalPrice += price;
+      })
+
+
+      console.log(totalPrice,
+         totalAmout);
+      return {
+         totalPrice,
+         totalAmout
+      }
+
+   }
 
 
 

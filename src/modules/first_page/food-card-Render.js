@@ -15,6 +15,7 @@ const DRINKS_CONTEINER = document.querySelector('.drinks__conteiner')
 
 
 
+
 class CardRender {
    async render() {
       let data = await getData.get()

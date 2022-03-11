@@ -5,10 +5,6 @@ const HEADER_BURGER_BTN = document.querySelector('.header-menu__burger')
 const HEADER_MENU_ITEM = document.querySelectorAll('.menu__item ')
 
 
-
-
-
-
 export {
    HEADER_BOTTOM_ROW
 }
