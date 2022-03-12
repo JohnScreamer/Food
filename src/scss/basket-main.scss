@@ -29,9 +29,34 @@
       margin: 0 auto;
       max-width: 900px;
       cursor: pointer;
+      position: relative;
+      padding-left: 20px;
 
+      &::before {
+         content: "";
+         display: block;
+         width: rem(9);
+         height: rem(2);
+         background-color: #FFFFFF;
+         position: absolute;
+         transform: rotate(-45deg);
+         left: 6px;
+         top: 3px;
 
+      }
 
+      &::after {
+         content: "";
+         display: block;
+         width: rem(9);
+         height: rem(2);
+         background-color: #FFFFFF;
+         position: absolute;
+         transform: rotate(225deg);
+         left: 5px;
+         top: 9px;
+
+      }
    }
 
    &__title {
@@ -41,6 +66,7 @@
       @include adaptiv-value("padding-bottom", 71, 32);
       padding-bottom: rem(71);
       padding-left: rem(20);
+
       margin: 0 auto;
       max-width: 900px;
 
@@ -48,6 +74,7 @@
    }
 
    &__outer-amount {
+      text-transform: lowercase;
       color: #72A479;
       font-size: rem(15);
       line-height: percent(15, 18);
@@ -62,6 +89,7 @@
    }
 
    &__subtitle {
+      text-transform: uppercase;
       font-weight: 700;
       font-size: rem(30);
       @include adaptiv-value('font-size', 25, 20);
@@ -73,6 +101,7 @@
 
    &__recommendation {
       @include adaptiv-value("margin-bottom", 60, 20);
+      margin-bottom: rem(60);
       border: 1px solid rgba(255, 255, 255, 0.1);
    }
 
@@ -92,6 +121,25 @@
 }
 
 @media (max-width:768px) {
+
+   .order__subtitle {
+      position: relative;
+      margin-left: 20px;
+
+      &::before {
+         content: "";
+         @include adaptiv-value("height", 25, 22);
+         height: 25px;
+         width: 4px;
+         background: #618967;
+         display: block;
+         position: relative;
+         top: 20px;
+         left: -19px;
+
+      }
+   }
+
    .accept-order__total-price-info {
       text-align: center;
    }
@@ -106,9 +154,13 @@
    }
 
    .order {
+      &__title {
+         padding-left: rem(0);
+      }
 
       &__body {
          display: flex;
+
 
       }
 
@@ -119,6 +171,7 @@
 
       &__nav {
          flex: 1 1 30%;
+
       }
 
       &__cansel {
@@ -130,6 +183,8 @@
          text-align: center;
 
       }
+
+      &__title {}
    }
 
 }
@@ -214,6 +269,7 @@
    &__info {
       display: flex;
       flex-direction: column;
+
    }
 
    &__all-orders {
@@ -260,12 +316,15 @@
       font-weight: 700;
       font-size: rem(18);
       @include adaptiv-value("font-size", 18, 16);
+      @include adaptiv-value('max-width', 259, 137);
       color: #FFFFFF;
+      max-width: rem(259);
    }
 
    &__description {
       font-size: rem(12);
       line-height: percent(12, 14);
+      max-width: rem(259);
 
       color: #A6A7AB;
    }
@@ -323,16 +382,17 @@
    }
 
    &__amount {
-      display: block;
+      display: flex;
       font-weight: 700;
       font-size: rem(20);
       @include adaptiv-value('font-size', 20, 16);
       line-height: percent(20, 26);
       color: #FFFFFF;
-      padding: 0 rem(13);
-      text-align: center;
-      width: rem(35);
-      @include adaptiv-value("width", 35, 25)
+
+      position: relative;
+      margin: 0 rem(13);
+
+
    }
 
    &__plus {

@@ -6,13 +6,6 @@ import {
    burger
 } from '../components/header-burger.js'
 
-import {
-   sliderHeader
-} from '../components/Header-slider.js'
-
-import {
-   mainSlider
-} from '../components/mainSliderFunction.js'
 
 import {
    addEvents
@@ -24,21 +17,23 @@ import {
 import {
    countBasket
 } from '../components/basket-counter.js'
+import {
+   orderNav
+} from '../modules/basket/order-nav.js'
 
 
 (async function () {
    try {
       basketdRender.render()
+
    } catch (error) {
       console.log(error);
 
    }
-
-   sliderHeader.addSliderEvent()
    burger.render()
-   mainSlider.sliderMain()
    addEvents.add()
    eventLoad.events()
+   orderNav.addEvent()
    setTimeout(() => {
       countBasket.render()
    }, 555);
@@ -49,7 +44,6 @@ import {
    async function eventstorage() {
       basketdRender.render()
       burger.render()
-      mainSlider.sliderMain()
       countBasket.render()
 
 

@@ -28,6 +28,10 @@ import {
    countBasket
 } from '../components/basket-counter.js'
 
+import {
+   basketdRender
+} from '../modules/basket/basket_page.js'
+
 
 (async function () {
 
@@ -51,6 +55,8 @@ import {
       burger.render()
       mainSlider.sliderMain()
       countBasket.render()
+      // basketdRender.renderRecommendation()
+
 
 
 
@@ -58,3 +64,45 @@ import {
 
 
 })()
+
+
+
+
+
+
+function arrCreate(a) {
+   let arr = []
+   let rez = a
+   while (rez) {
+      arr.push(rez)
+         --rez
+   }
+   arr.reverse()
+   return arr;
+
+
+}
+let arr2 = [...arrCreate(5)]
+console.log(arr2);
+
+
+
+function numRandom(arr) {
+   let ranB = arr2[Math.floor(Math.random() * arr2.length)]
+   console.log(ranB);
+   let a = arr2.filter(el => el != ranB)
+   console.log(arr);
+   arr2 = a;
+   return ranB
+
+
+}
+
+
+
+
+while (arr2.length) {
+   numRandom(arr2)
+
+}
+console.log(arr2);

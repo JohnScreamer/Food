@@ -92,6 +92,7 @@
    }
 }
 
+
 .burger-top {
    margin-bottom: rem(4);
 }
@@ -120,6 +121,7 @@
       padding: rem(23) rem(15);
       @include adaptiv-value("padding-top", 23, 12);
       @include adaptiv-value("padding-bottom", 23, 12);
+      
 
 
 
@@ -499,6 +501,7 @@
 
 
 
+
 .header-nav {
    background: #403C3B;
    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -652,18 +655,10 @@
 
 .swiper-slide {}
 
-.s {
-   background-color: rgb(145, 189, 25);
-   width: 225px;
-   height: 150px;
-   display: flex;
-   margin: 15px;
-}
 
-.as {
-   background-color: aqua;
-   width: 425px;
-   height: 150px;
-   display: flex;
-   margin: 5px;
+
+@media (max-width:768px) {
+   .header-nav {
+      display: none;
+   }
 }

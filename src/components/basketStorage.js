@@ -79,6 +79,20 @@ class BasketStorage {
 
 
    }
+   async delItem(id) {
+      let basket = await this.valid()
+      basket = basket.filter(item => {
+         if (item.id != id) {
+            return item;
+         }
+      })
+
+
+      localStorage.setItem('basket', JSON.stringify(basket));
+   }
+
+
+
    async getInfo() {
       let data = await this.valid();
       let totalPrice = 0;
@@ -89,7 +103,7 @@ class BasketStorage {
          amount
       }) => {
          totalAmout += amount;
-         totalPrice += price;
+         totalPrice += price * amount;
       })
 
 
