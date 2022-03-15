@@ -110,6 +110,7 @@ a {
 ::-webkit-scrollbar-track {
 
 	background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.794) inset;
 
 }
 
@@ -117,6 +118,9 @@ a {
 	background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
 	border-radius: 10px;
 
+	&:hover {
+		background: linear-gradient(114.93deg, #39553d 5.11%, #7b9e7f 94%);
+	}
 }
 
 /*--------------------*/

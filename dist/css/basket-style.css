@@ -171,11 +171,17 @@ a {
 ::-webkit-scrollbar-track {
   background: -webkit-gradient(linear, left top, right top, from(#494544), to(#504B4A));
   background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.794) inset;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.794) inset;
 }
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
   border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(114.93deg, #39553d 5.11%, #7b9e7f 94%);
 }
 
 /*--------------------*/
