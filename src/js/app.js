@@ -32,6 +32,9 @@ import {
    basketdRender
 } from '../modules/basket/basket_page.js'
 
+import {
+   basketValid
+} from '../components/basket-valid.js'
 
 (async function () {
 
@@ -47,7 +50,7 @@ import {
       countBasket.render()
    }, 555);
 
-
+   basketValid.addEvemt()
 
    window.addEventListener('storage', eventstorage)
    async function eventstorage() {

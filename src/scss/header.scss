@@ -501,7 +501,7 @@
 
 
 .header-nav {
-   background: #403C3B;
+
    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
    overflow: hidden;
 
@@ -518,7 +518,7 @@
 
 .list {
    justify-content: space-between;
-   background: #403C3B;
+
 }
 
 .menu {
@@ -536,7 +536,7 @@
       cursor: not-allowed;
       @include adaptiv-value("font-size", 18, 14);
       white-space: nowrap;
-      background: #403C3B;
+
    }
 
 
@@ -549,7 +549,7 @@
       @include adaptiv-value("max-width", 150, 120);
       text-align: center;
       color: #868484;
-      background: #403C3B;
+
 
 
 
@@ -626,9 +626,7 @@
 }
 
 
-.swiper {
-   background: #403C3B;
-}
+.swiper {}
 
 .swiper-slide {
    text-align: center;
@@ -652,19 +650,3 @@
 
 
 .swiper-slide {}
-
-.s {
-   background-color: rgb(145, 189, 25);
-   width: 225px;
-   height: 150px;
-   display: flex;
-   margin: 15px;
-}
-
-.as {
-   background-color: aqua;
-   width: 425px;
-   height: 150px;
-   display: flex;
-   margin: 5px;
-}

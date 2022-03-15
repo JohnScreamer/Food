@@ -121,7 +121,7 @@
       padding: rem(23) rem(15);
       @include adaptiv-value("padding-top", 23, 12);
       @include adaptiv-value("padding-bottom", 23, 12);
-      
+
 
 
 
@@ -520,7 +520,7 @@
 
 .list {
    justify-content: space-between;
-   background: #403C3B;
+
 }
 
 .menu {
@@ -538,7 +538,7 @@
       cursor: not-allowed;
       @include adaptiv-value("font-size", 18, 14);
       white-space: nowrap;
-      background: #403C3B;
+
    }
 
 
@@ -551,7 +551,7 @@
       @include adaptiv-value("max-width", 150, 120);
       text-align: center;
       color: #868484;
-      background: #403C3B;
+
 
 
 
@@ -628,9 +628,7 @@
 }
 
 
-.swiper {
-   background: #403C3B;
-}
+.swiper {}
 
 .swiper-slide {
    text-align: center;

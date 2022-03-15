@@ -4,6 +4,9 @@ import {
 import {
    countBasket
 } from '../components/basket-counter.js'
+import {
+   modelWindow
+} from '../components/model-window.js'
 
 class AddEvents {
    add() {
@@ -11,6 +14,7 @@ class AddEvents {
          let btnBasket = e.target.closest('.card__btn-basket');
          let btnMinus = e.target.closest('.card__btn-minus');
          let btnPlus = e.target.closest('.card__btn-plus');
+         let closeModelWindow = e.target.closest('.model-window-conteiner');
 
          if (btnBasket) {
 
@@ -73,6 +77,11 @@ class AddEvents {
 
 
          }
+         if (closeModelWindow) {
+            modelWindow.closeWindow();
+
+         }
+
 
 
 
