@@ -56,6 +56,7 @@
 
 
 .card {
+   transition-duration: 0.4s;
 
 
    z-index: 2;
@@ -282,7 +283,7 @@
 
 
    overflow: visible;
-   box-shadow: 0px 40px 55px rgba(43, 40, 40, 0.6);
+   box-shadow: 0px 40px 55px rgba(0, 0, 0, 0.6);
    transform: scale(1.0);
    transition-duration: 0.4s;
 

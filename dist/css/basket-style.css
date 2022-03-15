@@ -664,6 +664,9 @@ a {
 }
 
 .card {
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   z-index: 2;
   cursor: pointer;
   display: -webkit-box;
@@ -894,8 +897,8 @@ a {
 
 .card:hover {
   overflow: visible;
-  -webkit-box-shadow: 0px 40px 55px rgba(43, 40, 40, 0.6);
-          box-shadow: 0px 40px 55px rgba(43, 40, 40, 0.6);
+  -webkit-box-shadow: 0px 40px 55px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 40px 55px rgba(0, 0, 0, 0.6);
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);

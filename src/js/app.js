@@ -35,6 +35,9 @@ import {
 import {
    basketValid
 } from '../components/basket-valid.js'
+import {
+   about
+} from '../modules/first_page/aboutEvents.js'
 
 (async function () {
 
@@ -51,7 +54,7 @@ import {
    }, 555);
 
    basketValid.addEvemt()
-
+   about.addEvent()
    window.addEventListener('storage', eventstorage)
    async function eventstorage() {
       await cardRender.render()
