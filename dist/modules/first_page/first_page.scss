@@ -2,7 +2,8 @@
 
    overflow: hidden;
    user-select: none;
-
+   margin-bottom: rem(40);
+   @include adaptiv-value('margin-bottom', 40, 10)
 }
 
 .snacks {
@@ -135,6 +136,7 @@
    &__weight {
       font-size: rem(12);
       line-height: percent(12, 14);
+      flex-shrink: 0;
    }
 
    &__describtion {

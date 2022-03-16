@@ -1,4 +1,3 @@
-console.log('pruvit');
 import {
    basketdRender
 } from "../modules/basket/basket_page.js"
@@ -20,6 +19,9 @@ import {
 import {
    orderNav
 } from '../modules/basket/order-nav.js'
+import {
+   footerEvent
+} from '../components/footer.js'
 
 
 
@@ -36,6 +38,7 @@ import {
    addEvents.add()
    eventLoad.events()
    orderNav.addEvent()
+   footerEvent.addEvent()
    setTimeout(() => {
       countBasket.render()
    }, 555);

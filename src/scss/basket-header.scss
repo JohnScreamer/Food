@@ -104,6 +104,19 @@
 .burger-bottom {}
 
 
+.logo {
+   font-family: "Gilroy";
+   font-weight: bold;
+   font-size: rem(25);
+   letter-spacing: 0.15em;
+   color: #FFFFFF;
+   max-width: rem(150);
+   width: 100%;
+   @include adaptiv-value('font-size', 25, 18);
+   @include adaptiv-value('max-width', 132, 70);
+
+}
+
 .header-menu {
 
    &__conteiner {
@@ -136,17 +149,7 @@
 
    }
 
-   &__logo {
-      font-weight: bold;
-      font-size: rem(25);
-      letter-spacing: 0.15em;
-      color: #FFFFFF;
-      max-width: rem(150);
-      width: 100%;
-      @include adaptiv-value('font-size', 25, 18);
-      @include adaptiv-value('max-width', 132, 70);
-
-   }
+   &__logo {}
 
 
 
@@ -503,8 +506,8 @@
 
 
 .header-nav {
-   background: #403C3B;
-   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+   border: 1px solid rgba(255, 255, 255, 0.1);
    overflow: hidden;
 
    &__conteiner {

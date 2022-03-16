@@ -39,6 +39,10 @@ import {
    about
 } from '../modules/first_page/aboutEvents.js'
 
+import {
+   footerEvent
+} from '../components/footer.js'
+
 (async function () {
 
 
@@ -56,6 +60,7 @@ import {
    basketValid.addEvemt()
    about.addEvent()
    window.addEventListener('storage', eventstorage)
+   footerEvent.addEvent()
    async function eventstorage() {
       await cardRender.render()
       burger.render()
@@ -70,45 +75,3 @@ import {
 
 
 })()
-
-
-
-
-
-
-function arrCreate(a) {
-   let arr = []
-   let rez = a
-   while (rez) {
-      arr.push(rez)
-         --rez
-   }
-   arr.reverse()
-   return arr;
-
-
-}
-let arr2 = [...arrCreate(5)]
-console.log(arr2);
-
-
-
-function numRandom(arr) {
-   let ranB = arr2[Math.floor(Math.random() * arr2.length)]
-   console.log(ranB);
-   let a = arr2.filter(el => el != ranB)
-   console.log(arr);
-   arr2 = a;
-   return ranB
-
-
-}
-
-
-
-
-while (arr2.length) {
-   numRandom(arr2)
-
-}
-console.log(arr2);

@@ -1,0 +1,74 @@
+.main {
+
+
+
+
+   &__conteiner {
+      padding: rem(40) rem(15) rem(40) rem(15);
+      max-width: rem(1400);
+      width: 100%;
+      margin: 0 auto;
+   }
+}
+
+.offers {
+
+
+   &__title {}
+
+   &__conteiner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: rem(-25) rem(-12.5);
+
+
+
+      img {
+         max-width: rem(440);
+         width: 100%;
+         border-radius: 10px 10px 0px 0px;
+         height: rem(180);
+         @include adaptiv-value('height', 180, 130);
+         object-fit: cover;
+         margin-bottom: rem(15);
+      }
+
+      h2 {
+         font-weight: 700;
+         font-size: rem(18);
+         line-height: percent(18, 22);
+         color: #FFFFFF;
+         margin: 0 rem(20) rem(5) rem(20);
+      }
+
+      p {
+         font-size: rem(14);
+         line-height: percent(14, 16);
+         color: #A6A7AB;
+         margin: 0 rem(20) auto rem(20);
+      }
+
+      span {
+         display: block;
+         font-size: rem(14);
+         line-height: percent(14, 16);
+         color: #6FA076;
+         margin: rem(20) rem(20) 0 rem(20);
+
+
+      }
+   }
+
+   &__card-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: rem(25) rem(12.5);
+      max-width: rem(440);
+      width: 100%;
+      background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+      border-radius: 10px;
+      padding-bottom: rem(14);
+      justify-content: space-between;
+   }
+}

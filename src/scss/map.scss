@@ -1,0 +1,240 @@
+.contacts {
+   z-index: -3;
+   background-image: url(https://i.ibb.co/WfZdDhw/Group22.png);
+   background-position: right;
+   padding-top: rem(175);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   min-height: 680px;
+
+
+
+   &__conteiner {
+      margin: 0 auto;
+      max-width: rem(1114);
+      padding: 0 rem(15);
+      display: flex;
+   }
+
+
+
+   &__block-info {
+      background: #2E2B2C;
+      box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.15);
+      border-radius: 15px;
+      padding: rem(25) rem(40);
+      color: #FFFFFF;
+      font-style: normal;
+      max-width: rem(520);
+
+
+      h4 {
+         font-size: rem(14);
+
+         color: #CFCFCF;
+         margin-bottom: rem(5);
+
+      }
+
+      span {
+
+         font-size: rem(16);
+         @include adaptiv-value('font-size', 16, 12);
+      }
+
+
+   }
+}
+
+
+@media (max-width:768px) {
+
+   .contacts {
+      padding-top: rem(30);
+      background-position: right;
+
+      &__conteiner {
+         justify-content: center;
+      }
+
+
+   }
+
+   .block-info {
+      &__bottom-info {
+         flex-direction: column;
+
+         button {
+            margin-bottom: rem(20);
+
+         }
+      }
+   }
+
+}
+
+@media (max-width:1024px) {
+   .contacts {
+      padding-top: rem(175);
+      background-position: top;
+
+
+   }
+
+}
+
+.block-info {
+
+
+   &__title {
+      font-weight: 700;
+      font-size: rem(30);
+      line-height: percent(30, 36);
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: rem(40);
+      @include adaptiv-value('margin-bottom', 40, 20)
+   }
+
+   &__adress-info {
+      margin-left: rem(30);
+      margin-bottom: rem(20);
+
+
+
+
+
+
+
+
+
+
+
+
+      span {
+         font-weight: 600;
+      }
+
+      h4 {
+         position: relative;
+
+
+         &::before {
+            content: " ";
+            width: 15px;
+            height: 18px;
+            display: inline-block;
+            position: absolute;
+
+
+            left: -30px;
+            background-image: url('../img/Locationgreen.png');
+            background-position: center;
+            background-size: cover;
+
+
+
+         }
+      }
+   }
+
+   &__mail-info {
+      margin-left: rem(30);
+      margin-bottom: rem(20);
+
+      span {
+         font-weight: 600;
+      }
+
+
+
+      h4 {
+         position: relative;
+
+
+         &::before {
+            content: " ";
+            width: 17px;
+            height: 18px;
+            display: inline-block;
+            position: absolute;
+
+
+            left: -30px;
+            background-image: url('../img/Message.png');
+            background-position: center;
+            background-size: cover;
+
+
+
+         }
+      }
+   }
+
+   &__bottom-info {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: rem(50);
+
+      @include adaptiv-value('margin-bottom', 50, 25);
+
+      span {
+         display: block;
+         text-align: center;
+         font-weight: 700;
+
+         font-size: rem(23);
+         line-height: percent(23, 28);
+
+      }
+
+      button {
+         color: #FFFFFF;
+         font-weight: 700;
+         font-size: rem(13);
+         background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+         border-radius: 10px;
+         padding: rem(20) rem(30);
+         text-transform: uppercase;
+         line-height: percent(13, 16);
+
+         &:hover {
+            box-shadow: 0px 5px 10px rgba(114, 163, 121, 0.7);
+
+         }
+
+         &:active {
+            box-shadow: 0px 2px 1px rgba(114, 163, 121, 0.7);
+            transform: scale(0.9);
+         }
+      }
+   }
+
+   &__links {
+      margin: 0 auto;
+      max-width: rem(235);
+      display: flex;
+      justify-content: space-between;
+
+      span {
+         font-weight: 600;
+      }
+   }
+
+   &__list {
+
+
+      a {
+
+         img {
+            display: inline-block;
+            width: rem(20);
+            height: rem(20);
+            object-fit: cover;
+         }
+      }
+   }
+}

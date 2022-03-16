@@ -25,6 +25,7 @@ class CardRender {
       let htmlVariable;
       let basket = await basketStorage.valid()
       console.log(basket);
+      let capacityWeight;
 
       data.forEach(el => {
          let amount = 0;
@@ -33,6 +34,8 @@ class CardRender {
                amount = basket.amount;
             }
          });
+         el.type == "drinks" ? capacityWeight = `${el.weight} Л` : capacityWeight = `Вага: ${el.weight} г`;
+
          if (amount) {
 
 
@@ -41,7 +44,7 @@ class CardRender {
          <img class="card__img"  src="${el.img}">
          <div class="card__info">
          <span class="card__name">${el.name}</span>
-         <span class="card__weight">Вага:${el.weight} г</span>        
+         <span class="card__weight">${capacityWeight}</span>        
          </div>
          <p class="card__describtion">${el.description}</p>
          <div class="card__bottom">
@@ -76,7 +79,7 @@ class CardRender {
          <img class="card__img"  src="${el.img}">
          <div class="card__info">
          <span class="card__name">${el.name}</span>
-         <span class="card__weight">Вага:${el.weight} г</span>        
+         <span class="card__weight">${capacityWeight}</span>        
          </div>
          <p class="card__describtion">${el.description}</p>
          <div class="card__bottom">

@@ -1,0 +1,185 @@
+.main {
+   padding-top: rem(50);
+}
+
+.delivery {
+
+   padding: 0 rem(15);
+
+   &__main-block {
+      display: flex;
+   }
+
+   &__contenteiner {
+      max-width: rem(1300);
+      width: 100%;
+      margin: 0 auto;
+      color: #FFFFFF;
+   }
+
+   &__title {
+      margin-bottom: rem(32);
+   }
+
+   &__content {}
+
+   &__information-block {
+      flex: 1 1 50%;
+      margin-right: rem(30);
+   }
+
+   &__map {
+      background: url(https://i.ibb.co/WfZdDhw/Group22.png);
+      background-position: right;
+      border-radius: 10px;
+      max-width: rem(640);
+      width: 100%;
+      height: rem(750);
+      flex: 1 1 50%;
+      margin-top: rem(10);
+      @include adaptiv-value('height', 750, 300)
+   }
+
+   &__bottom-info-block-wrapper {
+      display: flex;
+      flex-direction: column;
+      font-size: rem(22);
+      line-height: 159%;
+      color: #CFCFCF;
+      margin: rem(20) 0 rem(30) 0;
+
+
+
+      p {
+
+         color: #CFCFCF;
+         max-width: rem(700);
+
+      }
+
+      h2 {
+         font-weight: 700;
+         flex: 0 1 100%;
+         max-width: rem(600);
+
+
+         color: #FFFFFF;
+
+      }
+   }
+}
+
+@media (max-width:768px) {
+   .delivery {
+      &__bottom-info-block-wrapper {}
+
+      &__information-block {
+         margin: 0;
+      }
+
+      &__map {
+         margin: 0 auto;
+      }
+
+      &__main-block {
+         display: block;
+      }
+   }
+
+
+}
+
+.information-block {
+
+   &__wrapper {}
+
+   &__title {
+      font-weight: 500;
+      font-size: rem(18);
+      line-height: percent(32, 18);
+      background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+      border-radius: 10px;
+      max-width: rem(618);
+      width: 100%;
+      padding: rem(17) rem(30);
+      margin-top: rem(10);
+      cursor: pointer;
+
+   }
+
+   &__text {
+      font-size: rem(16);
+      line-height: percent(25, 16);
+      background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+      border-radius: 0 0 10px 10px;
+      max-width: rem(618);
+      width: 100%;
+      padding: rem(17) rem(35);
+      display: none;
+
+   }
+}
+
+.bottom-info-block-wrapper {
+
+
+   &__business-hours {
+      display: flex;
+      margin-bottom: rem(40);
+
+
+      b {
+         display: block;
+         color: #FFFFFF;
+      }
+
+      span {
+         display: block;
+      }
+   }
+}
+
+.caffe-hours {
+   display: flex;
+   flex-direction: column;
+   margin-right: rem(100);
+}
+
+.office-hours {
+   display: flex;
+   flex-direction: column;
+}
+
+.text-active {
+   display: block;
+   animation-name: adczcv;
+   animation-duration: 500ms;
+
+   align-content: 1;
+
+   position: relative;
+
+
+}
+
+
+@keyframes adczcv {
+   0% {
+
+      overflow: hidden;
+
+      transform: scale(0.8, 0.8)
+   }
+
+
+
+   100% {
+      overflow: hidden;
+      transform: scale(1, 1);
+
+
+
+
+   }
+
+}
