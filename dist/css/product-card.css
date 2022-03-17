@@ -615,6 +615,10 @@ a {
   left: 0%;
 }
 
+.swiper {
+  overflow: visible;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -1092,79 +1096,6 @@ main {
   color: #FFFFFF;
   max-width: 220px;
   text-align: center;
-}
-
-.main__conteiner {
-  padding: 2.5rem 0.9375rem 2.5rem 0.9375rem;
-  max-width: 87.5rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.offers__conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: -1.5625rem -0.78125rem;
-}
-
-.offers__conteiner img {
-  max-width: 27.5rem;
-  width: 100%;
-  border-radius: 10px 10px 0px 0px;
-  height: 11.25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 0.9375rem;
-}
-
-.offers__conteiner h2 {
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 81.8181818182%;
-  color: #FFFFFF;
-  margin: 0 1.25rem 0.3125rem 1.25rem;
-}
-
-.offers__conteiner p {
-  font-size: 0.875rem;
-  line-height: 87.5%;
-  color: #A6A7AB;
-  margin: 0 1.25rem auto 1.25rem;
-}
-
-.offers__conteiner span {
-  display: block;
-  font-size: 0.875rem;
-  line-height: 87.5%;
-  color: #6FA076;
-  margin: 1.25rem 1.25rem 0 1.25rem;
-}
-
-.offers__card-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 1.5625rem 0.78125rem;
-  max-width: 27.5rem;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#494544), to(#504B4A));
-  background: -o-linear-gradient(left, #494544 0%, #504B4A 100%);
-  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
-  border-radius: 10px;
-  padding-bottom: 0.875rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .contacts {
@@ -1645,10 +1576,6 @@ main {
 
   .model-window-error h3 {
     font-size: calc(14px + 6 * ((100vw - 320px)/ 982));
-  }
-
-  .offers__conteiner img {
-    height: calc(130px + 50 * ((100vw - 320px)/ 982));
   }
 
   .contacts__block-info span {

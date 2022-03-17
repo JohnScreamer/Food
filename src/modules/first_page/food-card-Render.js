@@ -41,7 +41,7 @@ class CardRender {
 
             htmlVariable = `<li class="swiper-slide card" data-id='${el.id}' data-food-type='${el.type}' >
          <span class='card__counter' style="display: flex;" >${amount}</span>
-         <img class="card__img"  src="${el.img}">
+         <a  href="product-card.html"><img class="card__img" "  src="${el.img}"></a>
          <div class="card__info">
          <span class="card__name">${el.name}</span>
          <span class="card__weight">${capacityWeight}</span>        
@@ -76,7 +76,7 @@ class CardRender {
 
             htmlVariable = `<li class="swiper-slide card" data-id='${el.id}' data-food-type='${el.type}' >
          <span class='card__counter' style="display: none;">${amount}</span>
-         <img class="card__img"  src="${el.img}">
+         <a  href="product-card.html"><img class="card__img" "  src="${el.img}"></a>
          <div class="card__info">
          <span class="card__name">${el.name}</span>
          <span class="card__weight">${capacityWeight}</span>        

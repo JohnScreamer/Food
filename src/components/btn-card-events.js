@@ -7,6 +7,14 @@ import {
 import {
    modelWindow
 } from '../components/model-window.js'
+import {
+   storageCard
+} from '../components/card_local_storage.js'
+
+import {
+   productCard
+} from '../components/product_card_render.js'
+
 
 class AddEvents {
    add() {
@@ -15,6 +23,16 @@ class AddEvents {
          let btnMinus = e.target.closest('.card__btn-minus');
          let btnPlus = e.target.closest('.card__btn-plus');
          let closeModelWindow = e.target.closest('.model-window-conteiner');
+         let cardImg = e.target.closest('.card__img');
+
+         if (cardImg) {
+
+
+            storageCard.add(cardImg.closest('.card').getAttribute('data-id'))
+
+         }
+
+
 
          if (btnBasket) {
 
