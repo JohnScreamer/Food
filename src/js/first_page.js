@@ -23,6 +23,11 @@ import {
    footerEvent
 } from '../components/footer.js'
 
+import {
+   sliderEvents
+} from '../components/sliderEvent.js'
+
+
 
 
 
@@ -39,6 +44,7 @@ import {
    eventLoad.events()
    orderNav.addEvent()
    footerEvent.addEvent()
+   sliderEvents.add()
    setTimeout(() => {
       countBasket.render()
    }, 555);

@@ -34,7 +34,8 @@
                          <div class="input-conteiner">
                               <div class="input-decor">
 
-                                   <input type="text" value="Введите адрес доставки" class="header-menu__search-input">
+                                   <input type="text" placeholder="Введіть адрес доставки"
+                                        class="header-menu__search-input">
                               </div>
                          </div>
 
@@ -111,9 +112,14 @@
                <div class="header-nav__content">
                     <nav class=" swiper mySwiper ">
                          <ul class="list swiper-wrapper">
-                              <li class="menu__item"><a class="menu__link menu-active" href="#">Під пивко</a></li>
-                              <li class="menu__item"><a class="menu__link menu-active" href="#">Гарячі страви</a></li>
-                              <li class="menu__item"><a class="menu__link  menu-active" href="#">Напої </a></li>
+                              <li class="menu__item"><a class="menu__link menu-active" data-type="snack"
+                                        href="all_products.html">Під пивко</a></li>
+                              <li class="menu__item"><a class="menu__link menu-active" data-type="hot-dish"
+                                        href="all_products.html">Гарячі
+                                        страви</a></li>
+                              <li class="menu__item"><a class="menu__link  menu-active" data-type="drinks"
+                                        href="all_products.html">Напої </a>
+                              </li>
                               <li class="menu__item"><a class="menu__link" href="#">Супчик 😭</a></li>
                               <li class="menu__item"><a class="menu__link" href="#">Солодке 😭</a></li>
                               <li class="menu__item"><a class="menu__link" href="#">Пивко 😭</a></li>
@@ -129,7 +135,8 @@
    <section class="product-card">
       <div class="product-card__conteiner">
          <div class="product-card__content">
-            <input class="product-card__btn" type="button" onclick="history.back();" value="Назад" />
+            <label for="btn-back"></label>
+            <input class="product-card__btn" id="btn-back" type="button" onclick="history.back();" value="Назад" />
             <div class="product-card__wrapper"></div>
          </div>
       </div>

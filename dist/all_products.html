@@ -1,4 +1,25 @@
-<header class="header">
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+   <link
+      href="https://www.dafontfree.net/embed/emluZy1ydXN0LWRlbW8tYmFzZSZkYXRhLzkxL3ovMTY3NDM4L1ppbmdSdXN0RGVtby1CYXNlLm90Zg"
+      rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/all_products.min.css">
+
+   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+   <title>@@Logos</title>
+</head>
+
+<body>
+   <div class="wrapper">
+
+      <header class="header">
      <div class="header-menu">
           <div class="header-menu__conteiner conteiner">
                <div class="header-menu__content">
@@ -9,11 +30,12 @@
                               <span class="burger__item burger-bottom"></span>
                               <span class="burger__title">МЕНЮ</span>
                          </div>
-                         <a href="#" class="header-menu__logo logo">LOGOS</a>
+                         <a href="index.html" class="header-menu__logo logo">LOGOS</a>
                          <div class="input-conteiner">
                               <div class="input-decor">
 
-                                   <input type="text" value="Введите адрес доставки" class="header-menu__search-input">
+                                   <input type="text" placeholder="Введіть адрес доставки"
+                                        class="header-menu__search-input">
                               </div>
                          </div>
 
@@ -65,7 +87,7 @@
                     <div class="header-menu__bottom-content-row">
                          <div class="input-decor">
 
-                              <input type="text" placeholder="Введіть адрес доставки" class="header-menu__search-input">
+                              <input type="text" value="Введите адрес доставки" class="header-menu__search-input">
                          </div>
 
 
@@ -85,23 +107,13 @@
           </div>
 
      </div>
-     <div class="header-slider">
-          <div class="header-slider__conteiner conteiner">
-               <div class="header-slider__content">
-                    <div class="header-slider__colum">
-                         <h1 class="header-slider__title">Доставка смачних страв за 60 хвилин</h1>
-                         <div class="header-slider__subtitle">Ще не пробував?</div>
-                    </div>
-               </div>
-          </div>
-     </div>
-     <div class="header-nav">
+     <div class="header-nav" id="header-nav">
           <div class="header-nav__conteiner conteiner">
                <div class="header-nav__content">
                     <nav class=" swiper mySwiper ">
                          <ul class="list swiper-wrapper">
-                              <li class="menu__item"><a class="menu__link menu-active" data-type="snack" href="#">Під
-                                        пивко</a></li>
+                              <li class="menu__item"><a class="menu__link menu-active" data-type="snack"
+                                        href="all_products.html">Під пивко</a></li>
                               <li class="menu__item"><a class="menu__link menu-active" data-type="hot-dish"
                                         href="all_products.html">Гарячі
                                         страви</a></li>
@@ -119,3 +131,88 @@
           </div>
      </div>
 </header>
+      <main class="main">
+   <div class="main__conteiner">
+      <h1 class="main__title food__title"></h1>
+      <label for="btn-back"></label>
+      <input class="product-card__btn" id="btn-back" type="button" onclick="history.back();" value="Назад" />
+      <section class="product">
+
+      </section>
+   </div>
+
+
+
+   </div>
+
+   <div class="model-window-conteiner"></div>
+   <div class="contacts">
+   <div class="contacts__conteiner">
+      <address class="contacts__block-info">
+         <h2 class="block-info__title">Контакти</h2>
+         <div class="block-info__adress-info">
+            <h4>Наша адреса:</h4>
+            <span>вул.Степана Бандери ,12. 3 підїзд, лавочка на проти турніків ХД)) </span>
+         </div>
+         <div class="block-info__mail-info">
+            <h4>Наша пошта:</h4>
+            <span>caribu322228@gmail.com</span>
+         </div>
+         <div class="block-info__bottom-info">
+            <button>забронювати лавку</button>
+            <span>(495) 937-99-92</span>
+
+
+         </div>
+
+         <div class="block-info__links">
+            <span>Ми у соцмережах:</span>
+            <div class="block-info__list">
+               <a href="#"><img src="img/Vectorf.png" alt=""></a>
+               <a href="#"><img src="img/Vectorvk.png" alt="" srcset=""></a>
+               <a href="#"><img src="img/instagram.png" alt=""></a>
+
+
+            </div>
+         </div>
+      </address>
+   </div>
+
+
+</div>
+</main>
+      <footer class="footer">
+   <div class="footer__conteiner">
+      <div class="footer__content">
+         <button class="footer__button-up"></button>
+         <div class="footer__info-wrapper">
+            <div class="footer__logo  logo">logos</div>
+            <span>© ККК ЙО «Сабаки я Наруто Узумаки»
+               Все права защищены. 2010-2020</span>
+            <a href="#">Угода користувача </a>
+            <a href="#">Карта сайта</a>
+            <a href="#">Політика конфіденційності</a>
+
+         </div>
+         <div class="footer__links">
+            <a href="#" class="footer__link">Про ресторан</a>
+            <a href="delivery.html" class="footer__link">Умови доставки</a>
+            <a href="#" class="footer__link">Повернення товара</a>
+            <a href="offers.html" class="footer__link">Акції</a>
+         </div>
+      </div>
+   </div>
+
+
+</footer>
+   </div>
+
+
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+   <script src="js/all_products.js"></script>
+
+</body>
+
+</html>

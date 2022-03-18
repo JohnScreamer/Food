@@ -31,11 +31,19 @@ import {
 import {
    productCard
 } from '../components/product_card_render.js'
+import {
+   cardBtnStyle
+} from '../components/product_card_events.js'
+
+import {
+   sliderEvents
+} from '../components/sliderEvent.js'
 
 
 
 
 (async function () {
+   cardBtnStyle.addEvents()
    await productCard.render()
    burger.render()
    addEvents.add()
@@ -44,10 +52,13 @@ import {
    sliderHeader.addSliderEvent()
    mainSlider.sliderMain()
    basketValid.addEvemt()
+   sliderEvents.add()
+
 
 
    setTimeout(() => {
       countBasket.render()
+
    }, 555);
 
 
@@ -57,6 +68,7 @@ import {
       basketdRender.render()
       burger.render()
       countBasket.render()
+
 
 
 

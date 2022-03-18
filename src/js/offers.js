@@ -30,6 +30,9 @@ import {
 } from '../components/basket-valid.js'
 
 
+import {
+   sliderEvents
+} from '../components/sliderEvent.js'
 
 
 
@@ -42,6 +45,7 @@ import {
    sliderHeader.addSliderEvent()
    mainSlider.sliderMain()
    basketValid.addEvemt()
+   sliderEvents.add()
    setTimeout(() => {
       countBasket.render()
    }, 555);

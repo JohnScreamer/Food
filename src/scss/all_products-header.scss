@@ -354,10 +354,6 @@
 }
 
 @media (max-width: 768px) {
-   .header-nav {
-      display: none;
-   }
-
    .header-menu__burger {
       display: block;
    }
@@ -631,9 +627,7 @@
 }
 
 
-.swiper {
-   overflow: visible;
-}
+.swiper {}
 
 .swiper-slide {
    text-align: center;

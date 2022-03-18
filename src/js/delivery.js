@@ -35,6 +35,11 @@ import {
    deliveryEvents
 } from '../components/delivery-events.js'
 
+import {
+   sliderEvents
+} from '../components/sliderEvent.js'
+
+
 
 
 
@@ -49,6 +54,7 @@ import {
    mainSlider.sliderMain()
    basketValid.addEvemt()
    deliveryEvents.addEvents()
+   sliderEvents.add()
    setTimeout(() => {
       countBasket.render()
    }, 555);

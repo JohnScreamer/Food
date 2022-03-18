@@ -35,23 +35,25 @@ import {
 import {
    basketValid
 } from '../components/basket-valid.js'
-import {
-   about
-} from '../modules/first_page/aboutEvents.js'
 
 import {
    footerEvent
 } from '../components/footer.js'
+
+import {
+   allProduct
+} from '../components/all_product_card_render.js'
 import {
    sliderEvents
 } from '../components/sliderEvent.js'
 
+
 (async function () {
 
 
-   await cardRender.render()
-   sliderHeader.addSliderEvent()
 
+   sliderHeader.addSliderEvent()
+   allProduct.render()
    burger.render()
    mainSlider.sliderMain()
    addEvents.add()
@@ -62,9 +64,9 @@ import {
    }, 555);
 
    basketValid.addEvemt()
-   about.addEvent()
    window.addEventListener('storage', eventstorage)
    footerEvent.addEvent()
+
    async function eventstorage() {
       await cardRender.render()
       burger.render()

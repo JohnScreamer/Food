@@ -1,0 +1,28 @@
+.product__list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+   margin: -10px;
+
+}
+
+.card {
+   margin: 10px;
+
+}
+
+.main {
+
+   &__conteiner {
+
+
+      max-width: rem(1400);
+      width: 100%;
+      margin: 0 auto;
+
+      padding: rem(50) rem(15);
+   }
+
+   &__title {}
+}
