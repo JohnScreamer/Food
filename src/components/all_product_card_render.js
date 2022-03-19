@@ -21,20 +21,18 @@ class CardRender {
       let data = await getData.get()
       let sS = sessionStorage.getItem('type')
       let type = sS
-      console.log(type, 66);
 
       data = data.filter(el => {
          if (el.type == type) {
             return el;
          }
       })
-      console.log(data, 55);
 
 
 
       let htmlVariable = '';
       let basket = await basketStorage.valid()
-      console.log(basket);
+
       let capacityWeight;
       let title;
       let ul;

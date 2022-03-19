@@ -1117,6 +1117,51 @@ main {
   padding: 3.125rem 0.9375rem;
 }
 
+.all-product__label {
+  display: inline-block;
+  background: -o-linear-gradient(335.07deg, #618967 5.11%, #72A479 94%);
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  border-radius: 50%;
+  width: 2.3125rem;
+  height: 2.3125rem;
+  position: relative;
+  margin-left: 0.625rem;
+  margin-bottom: 0.625rem;
+  cursor: pointer;
+}
+
+.all-product__label::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 0.9375rem;
+  height: 0.09375rem;
+  background-color: #FFFFFF;
+  top: 14px;
+  left: 8.5px;
+  -webkit-transform: rotate(140deg);
+      -ms-transform: rotate(140deg);
+          transform: rotate(140deg);
+}
+
+.all-product__label::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 0.9375rem;
+  height: 0.09375rem;
+  background-color: #FFFFFF;
+  top: 22.6px;
+  left: 8.5px;
+  -webkit-transform: rotate(220deg);
+      -ms-transform: rotate(220deg);
+          transform: rotate(220deg);
+}
+
+.all-product__btn {
+  display: none;
+}
+
 .contacts {
   z-index: -3;
   background-image: url(https://i.ibb.co/WfZdDhw/Group22.png);
@@ -1595,6 +1640,10 @@ main {
 
   .model-window-error h3 {
     font-size: calc(14px + 6 * ((100vw - 320px)/ 982));
+  }
+
+  .main__title {
+    padding-bottom: calc(20px + 30 * ((100vw - 320px)/ 982));
   }
 
   .contacts__block-info span {

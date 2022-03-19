@@ -17,7 +17,7 @@ class BasketValid {
       let {
          totalAmout
       } = await basketStorage.getInfo()
-      console.log(totalAmout);
+
       if (totalAmout > 0) {
 
 

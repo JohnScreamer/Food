@@ -27,7 +27,9 @@ import {
    sliderEvents
 } from '../components/sliderEvent.js'
 
-
+import {
+   validForm
+} from '../components/form_validation.js'
 
 
 
@@ -45,6 +47,10 @@ import {
    orderNav.addEvent()
    footerEvent.addEvent()
    sliderEvents.add()
+
+   validForm.addEvents()
+   validForm.valid()
+   validForm.ValidAllForm()
    setTimeout(() => {
       countBasket.render()
    }, 555);

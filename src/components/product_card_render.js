@@ -32,7 +32,7 @@ class ProductCard {
       })
 
       if (hasInBasket) {
-         button = `<button class="remove-btn">Забрати з корзини</button>`
+         button = `<button class="remove-btn">Забрати</button>`
 
       } else {
          button = `<button class="add-btn">Корзина</button>`
@@ -89,9 +89,7 @@ class ProductCard {
             let amount = 0;
             basket.forEach(basket => {
 
-               console.log(data, 'data');
-               console.log(recomend, 'recomend');
-               console.log(recomend[id], 'recomendID');
+
                if (basket.id == recomend[id].id) {
                   amount = basket.amount;
                }

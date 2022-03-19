@@ -79,3 +79,5 @@ import {
 
 
 })()
+
+console.log(document.forms);

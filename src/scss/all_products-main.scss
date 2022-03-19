@@ -22,7 +22,55 @@
       margin: 0 auto;
 
       padding: rem(50) rem(15);
+
    }
 
-   &__title {}
+   &__title {
+      @include adaptiv-value('padding-bottom', 50, 20)
+   }
+}
+
+.all-product {
+
+   &__label {
+      display: inline-block;
+      background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+      border-radius: 50%;
+      width: rem(37);
+      height: rem(37);
+      position: relative;
+      margin-left: rem(10);
+      margin-bottom: rem(10);
+      cursor: pointer;
+
+
+
+      &::before {
+         content: "";
+         position: absolute;
+         display: inline-block;
+         width: rem(15);
+         height: rem(1.5);
+         background-color: #FFFFFF;
+         top: 14px;
+         left: 8.5px;
+         transform: rotate(140deg);
+      }
+
+      &::after {
+         content: "";
+         position: absolute;
+         display: inline-block;
+         width: rem(15);
+         height: rem(1.5);
+         background-color: #FFFFFF;
+         top: 22.6px;
+         left: 8.5px;
+         transform: rotate(220deg);
+      }
+   }
+
+   &__btn {
+      display: none;
+   }
 }

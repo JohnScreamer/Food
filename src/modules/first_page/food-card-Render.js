@@ -24,7 +24,6 @@ class CardRender {
       let htmlDrinks = ''
       let htmlVariable;
       let basket = await basketStorage.valid()
-      console.log(basket);
       let capacityWeight;
 
       data.forEach(el => {

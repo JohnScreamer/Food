@@ -23,7 +23,7 @@ class ProductEvents {
          }
          if (add) {
 
-            add.textContent = 'Забрати з корзини'
+            add.textContent = 'Забрати'
             add.classList.add('remove-btn')
             add.classList.remove('add-btn')
             basketStorage.addItem(id)

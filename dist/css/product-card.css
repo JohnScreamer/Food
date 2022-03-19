@@ -1241,7 +1241,7 @@ main {
 
 .item__bottom .remove-btn::before {
   content: "";
-  height: 2.8125rem;
+  height: 1.875rem;
   width: 0.09375rem;
   background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
